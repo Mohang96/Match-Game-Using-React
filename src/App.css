@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-background {
+  background-color: #2c0e3a;
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-background {
+    padding: 14px 24px 14px 24px;
+  }
+}
+
+.website-logo {
+  width: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 200px;
+  }
+}
+
+.score-and-timer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .category-container {
+    margin-right: 20px;
+  }
+}
+
+.category-text {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .category-text {
+    font-size: 22px;
+  }
+}
+
+.category-value {
+  color: #fec653;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .category-value {
+    font-size: 24px;
+  }
+}
+
+.timer-logo {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.game-display-background-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .game-display-background-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.game-display-responsive-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .game-display-responsive-container {
+    width: 60%;
+  }
+}
+
+.display-image {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.tab-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-items-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.thumbnail-items-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.score-card-background {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .score-card-background {
+    width: 60%;
+  }
+}
+
+.score-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+  .score-card {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.trophy-image {
+  width: 40%;
+}
+
+.your-score-text {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-score-text {
+    font-size: 36px;
+  }
+}
+
+.score-text {
+  margin-top: 0px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+.reset-icon {
+  margin-right: 8px;
+}
+
+.play-again-btn {
+  margin-top: 0px;
+  background-color: #cf60c8;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
